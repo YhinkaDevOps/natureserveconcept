@@ -1,0 +1,64 @@
+"use client";
+import React, { useState } from "react";
+import { IoCloseCircleSharp } from "react-icons/io5";
+import Image from "next/image";
+import image1 from "../../public/assets/image-1.jpg";
+import image2 from "../../public/assets/image-2.jpg";
+import image3 from "../../public/assets/image-3.jpg";
+import image4 from "../../public/assets/image-4.jpg";
+import image5 from "../../public/assets/image-5.jpg";
+import image6 from "../../public/assets/image-6.jpg";
+
+const Gallery = () => {
+  let dataCard = [
+    {
+      id: 1,
+      imgSrc: image1,
+    },
+    {
+      id: 2,
+      imgSrc: image2,
+    },
+    {
+      id: 3,
+      imgSrc: image3,
+    },
+    {
+      id: 4,
+      imgSrc: image4,
+    },
+    {
+      id: 5,
+      imgSrc: image5,
+    },
+    {
+      id: 6,
+      imgSrc: image6,
+    },
+  ];
+
+
+  return (
+    <div name="gallery" className="min-h-[500px] lg:px-0 py-20 bg-[#f6f6f6]">
+      <div className="max-w-[1100px] mx-auto mb-10">
+        <h6 className="text-[#acbe40] text-center text-5xl font-bold mb-3">
+          GALLERY
+        </h6>
+      </div>
+
+      <div className="gallery max-w-[1100px] mx-auto">
+        {dataCard.map((card) => (
+          <div
+            key={card.id}
+            className="pics"
+            onClick={() => getImg(card.imgSrc)}
+          >
+            <Image src={card.imgSrc} alt="" className="w-full rounded-md" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;
