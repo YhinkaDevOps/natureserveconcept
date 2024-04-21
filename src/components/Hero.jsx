@@ -6,7 +6,7 @@ const Hero = () => {
     <div name="/" className="hero-image min-h-screen">
       <div className="bg-text mt-28">
         <div className="flex flex-col md:flex-row gap-5 basis-[40%]">
-          <h1 className="text-4xl font-bold font-sans flex items-center justify-center">
+          <h1 className="text-2xl md:text-4xl font-bold font-sans flex items-center justify-center">
             Nature Concept & Allied Services Co. Landscape Design Solution
           </h1>
 

@@ -46,11 +46,11 @@ const Gallery = () => {
         </h6>
       </div>
 
-      <div className="gallery max-w-[1100px] mx-auto">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-3 max-w-[1100px] mx-auto py-10">
         {dataCard.map((card) => (
           <div
             key={card.id}
-            className="pics"
+            className=""
             onClick={() => getImg(card.imgSrc)}
           >
             <Image src={card.imgSrc} alt="" className="w-full rounded-md" />
