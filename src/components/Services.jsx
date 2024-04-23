@@ -54,13 +54,13 @@ const Services = () => {
 
             <span className="flex gap-10">
               <p className="flex gap-4">
-                <Image src={flower} width={50} height={100} alt="bg-icon" />
+                <Image src={flower} width={30} height={100} alt="bg-icon" />
                 <h1 className="flex items-center justify-center font-bold">
                   Skilled Gardening Professional
                 </h1>
               </p>
               <p className="flex gap-4">
-                <Image src={medal} width={50} height={100} alt="bg-icon" />
+                <Image src={medal} width={30} height={100} alt="bg-icon" />
                 <h1 className="flex items-center justify-center font-bold">
                   Satisfaction Assured
                 </h1>

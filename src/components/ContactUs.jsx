@@ -13,7 +13,7 @@ const ContactUs = () => {
         <span className="rounded">
           <Image src={emailsent} width={100} height={100} alt="email" />
         </span>
-        <h4 className="text-4xl text-blue-900">Thank You!</h4>
+        <h4 className="text-4xl text-white">Thank You!</h4>
         <h4 className="text-3xl text-center text-white">
           Your submission has been sent
         </h4>

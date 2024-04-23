@@ -46,7 +46,7 @@ const Gallery = () => {
         </h6>
       </div>
 
-      <div className="grid gap-5 grid-cols-1 md:grid-cols-3 max-w-[1100px] mx-auto py-10">
+      <div className="px-4 grid gap-5 grid-cols-1 md:grid-cols-3 max-w-[1100px] mx-auto py-10">
         {dataCard.map((card) => (
           <div
             key={card.id}

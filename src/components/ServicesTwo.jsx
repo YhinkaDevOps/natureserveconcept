@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 const ServicesTwo = () => {
   const cardsData = [
@@ -45,19 +44,19 @@ const ServicesTwo = () => {
           </p>
         </div>
 
-        <p className="mx-auto max-w-[1100px] text-center text-4xl font-bold">
+        <p className="mx-auto  text-center text-3xl md:text-4xl font-bold">
           {" "}
           We Are a Gardening Company Based in Nigeria, that Provides
         </p>
-        <p className="mx-auto max-w-[1100px] text-3xl text-center font-bold mt-5">
+        <p className="mx-auto text-2xl md:text-3xl text-center font-bold mt-5">
           {" "}
           Horticulture, landscaping, fumigation, consultation, and maintenance
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 md:gap-6 mx-auto max-w-[1000px] md:p-2 mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-4 px-2 gap-10 md:gap-6 mx-auto max-w-[1000px] md:p-2 mt-20">
         {cardsData.map((card) => (
-          <motion.div
+          <div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             key={card.id}
@@ -66,12 +65,12 @@ const ServicesTwo = () => {
             <img
               src={card.imageUrl}
               alt={card.header}
-              className="card-image rounded-[50%] p-2"
+              className="card-image rounded-2xl p-2"
             />
             <div className="flex flex-col gap-3 md:gap-6 p-2">
               <h3 className="font-bold text-lg text-center">{card.header}</h3>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

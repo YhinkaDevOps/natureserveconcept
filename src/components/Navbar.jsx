@@ -15,30 +15,29 @@ const Navbar = () => {
       <div className="mx-auto py-4 px-5 md:px-2 md:pb-8 md:pt-2">
         <div className="flex justify-between items-end">
           <div className="pb-2 hidden md:block">
-            <Link to="/" spy={true} smooth={true} duration={500}>
-              <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
-                <Image
-                  src="/assets/logo-bg.png"
-                  width={20}
-                  height={65}
-                  alt="logo"
-                />
+            <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+              <Image
+                src="/assets/logo-bg.png"
+                width={20}
+                height={65}
+                alt="logo"
+              />
+              <Link to="/" spy={true} smooth={true} duration={500}>
                 Nature Concept & Allied Services Co.
-              </button>
-            </Link>
+              </Link>
+            </button>
           </div>
 
           <div className="pb-2 block md:hidden">
-            <Link to="/" spy={true} smooth={true} duration={500}>
-              <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
-                <Image
-                  src="/assets/logo-bg.png"
-                  width={20}
-                  height={65}
-                  alt="logo"
-                />
-              </button>
-            </Link>
+            <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+              <Image
+                src="/assets/logo-bg.png"
+                width={20}
+                height={65}
+                alt="logo"
+              />
+              <Link to="/" spy={true} smooth={true} duration={500}></Link>
+            </button>
           </div>
 
           <div className="hidden md:block">
@@ -118,50 +117,53 @@ const Navbar = () => {
           <div className="bg-[#222222]  md:hidden">
             <div className="px-2 pt-2 pb-2 space-y-1 sm:px-3">
               <ul className="list-none space-y-2">
-                <li className="cursor-pointer text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link
-                    to="/"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="capitalize"
-                  >
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="capitalize"
+                >
+                  <li className="cursor-pointer text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                     HOME
-                  </Link>
-                </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-55}
-                  >
+                  </li>
+                </Link>
+
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                     ABOUT
-                  </Link>
-                </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link
-                    to="service"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-55}
-                  >
+                  </li>
+                </Link>
+
+                <Link
+                  to="service"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                     SERVICES
-                  </Link>
-                </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-55}
-                  >
+                  </li>
+                </Link>
+
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-55}
+                >
+                  <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                     CONTACT
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
