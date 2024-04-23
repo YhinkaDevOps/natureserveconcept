@@ -29,15 +29,16 @@ const Navbar = () => {
           </div>
 
           <div className="pb-2 block md:hidden">
-            <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
-              <Image
-                src="/assets/logo-bg.png"
-                width={20}
-                height={65}
-                alt="logo"
-              />
-              <Link to="/" spy={true} smooth={true} duration={500}></Link>
-            </button>
+            <Link to="/" spy={true} smooth={true} duration={500}>
+              <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+                <Image
+                  src="/assets/logo-bg.png"
+                  width={20}
+                  height={65}
+                  alt="logo"
+                />
+              </button>
+            </Link>
           </div>
 
           <div className="hidden md:block">

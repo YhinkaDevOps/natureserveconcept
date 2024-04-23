@@ -19,7 +19,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row max-w-[1080px] px-4 mx-auto gap-10">
+        <div className="flex flex-col md:flex-row max-w-[1080px] mx-auto gap-10">
           <div className="basis-[50%]">
             <Image
               src={landscape}
