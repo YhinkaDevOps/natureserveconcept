@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ContactUs = () => {
-  const [state, handleSubmit] = useForm("xpzvowae");
+  const [state, handleSubmit] = useForm("");
   if (state.succeeded) {
     return (
       <div className="products-bg service-header contact-form-bg font-bold flex flex-col gap-5 justify-center items-center min-h-[600px] md:min-h-screen">
