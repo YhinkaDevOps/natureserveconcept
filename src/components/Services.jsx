@@ -1,9 +1,16 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import landscape from "../../public/assets/landscape-bg.jpg";
 import flower from "../../public/assets/agave.gif";
 import medal from "../../public/assets/medal.gif";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // import { motion } from "framer-motion";
 
 const Services = () => {
@@ -20,25 +27,51 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col md:flex-row max-w-[1080px] mx-auto gap-10">
-          <div className="basis-[50%]">
-            <Image
-              src={landscape}
-              width={380}
-              height={300}
-              alt="bg-icon"
-              className="landscape-bg"
-            />
+          <div className="basis-1/2">
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper max-w-[500px]"
+            >
+              <SwiperSlide>
+                <img src="/assets-two/about-9.jpg" alt="about-jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/assets-two/about-1.jpg" alt="about-jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/assets-two/about-25.jpg" alt="about-jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/assets-two/about-23.jpg" alt="about-jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/assets-two/about-27.jpg" alt="about-jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/assets-two/about-20.jpg" alt="about-jpg" />
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <div className="flex flex-col gap-7 basis-[70%]">
+          <div className="flex flex-col gap-7 basis-[50%]">
             <h3 className="roboto-bold text-4xl font-bold text-[#242424] text-left">
               Consider your garden as an extension of your indoor living area.
             </h3>
 
-            <p className="text-[#494949] text-xl">
+            {/* <p className="text-[#494949] text-xl">
               Our garden services include horticultural, landscaping,
               fumigation, consultation, and maintenance of all your gardening
               needs.
-            </p>
+            </p> */}
 
             <p className="flex flex-col gap-3">
               <span>

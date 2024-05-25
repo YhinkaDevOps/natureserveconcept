@@ -26,9 +26,6 @@ const ContactUs = () => {
   return (
     <div name="contact" className="min-h-screen pt-[79px]">
       <div className="max-w-[1100px] mx-auto mb-7">
-        <h6 className="text-[#acbe40] text-center text-5xl font-bold mb-3">
-          CONTACT-US
-        </h6>
       </div>
       {/* Contact Container */}
       <div className="mx-auto max-w-[1099px] my-10 px-4 md:px-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">

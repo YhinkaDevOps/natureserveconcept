@@ -1,32 +1,35 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import landscaping from "../../public/assets-two/about-15.jpg";
+import fumigation from "../../public/assets-two/about-12.jpg";
+import garden from "../../public/assets-two/about-19.jpg";
+import mowing from "../../public/assets-two/about-26.jpg";
 
 const ServicesTwo = () => {
   const cardsData = [
     {
       id: 1,
-      imageUrl: "https://neatyard.ng/wp-content/uploads/2022/06/image-6.jpg",
+      imageUrl: garden,
       header: "Garden Care",
       text: "Through enhancing growth in the vital sector of water production, House of Flourish Nig Ltd. advances water security, poverty alleviation, and employment opportunities.",
     },
     {
       id: 2,
-      imageUrl:
-        "https://neatyard.ng/wp-content/uploads/2022/06/image-13-295x239.jpg",
-      header: "Lawn moving",
+      imageUrl: mowing,
+      header: "Mowing",
       text: "By obtaining a better growth rate in this crucial area of the economy, House of Flourish Nig Ltd. promotes food security, the reduction of poverty, and employment possibilities",
     },
     {
       id: 3,
-      imageUrl: "https://neatyard.ng/wp-content/uploads/2022/06/2-1.jpg",
+      imageUrl: landscaping,
       header: "Landscape design",
       text: "House of Flourish Nig Ltd. is a strong supporter of education since it equips people with the knowledge and abilities required to maintain good health, find employment, and promote tolerance.",
     },
     {
       id: 4,
-      imageUrl:
-        "https://predominantlygreen.ng/wp-content/uploads/2021/10/Predominantly-Green-Gardens-23.png",
+      imageUrl: fumigation,
       header: "Fumigation",
       text: "At House of Flourish Nig Ltd., we offer suggestions and aid buyers and sellers in marketing and acquiring real estate at the finest price and conditions. figuring out the needs and resources of the client in order to recommend solutions that work for them.",
     },
@@ -50,7 +53,8 @@ const ServicesTwo = () => {
         </p>
         <p className="mx-auto text-2xl md:text-3xl text-center font-bold mt-5">
           {" "}
-          Horticulture, landscaping, fumigation, consultation, and maintenance
+          Horticulture, landscaping, fumigation, consultation, and garden
+          maintenance
         </p>
       </div>
 
@@ -62,8 +66,15 @@ const ServicesTwo = () => {
             key={card.id}
             className="flex flex-col gap-4 "
           >
-            <img
+            {/* <img
               src={card.imageUrl}
+              alt={card.header}
+              className="card-image rounded-2xl p-2"
+            /> */}
+            <Image
+              src={card.imageUrl}
+              width={500}
+              height={100}
               alt={card.header}
               className="card-image rounded-2xl p-2"
             />

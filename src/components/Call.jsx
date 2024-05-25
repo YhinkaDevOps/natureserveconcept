@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 
 const Call = () => {
   return (
-    <div className="call-bg max-h-[1000px] px-4 lg:px-0 py-20 bg-[#f6f6f6]">
+    <div className="call-bg max-h-[1000px] px-4 lg:px-0 py-20">
       <div className="flex flex-col gap-7">
-        <h4 className="text-4xl font-bold text-center text-white">
+        <h4 className="text-2xl font-bold text-center text-white ">
           We're here to assist you in making your green vision a reality.
         </h4>
         <h4 className="text-4xl font-bold text-center text-white">
