@@ -4,9 +4,21 @@ import { useForm, ValidationError } from "@formspree/react";
 import emailsent from "../../public/assets/email-sent.gif";
 import Image from "next/image";
 import Link from "next/link";
+import Cookies from "js-cookie";
 
 const ContactUs = () => {
-  const [state, handleSubmit] = useForm("");
+  const handleButtonClick = () => {
+    // Clear all cookies
+    const allCookies = Cookies.get();
+    for (let cookie in allCookies) {
+      Cookies.remove(cookie);
+    }
+
+    // Refresh the page
+    window.location.reload();
+  };
+
+  const [state, handleSubmit] = useForm("mpzveoye");
   if (state.succeeded) {
     return (
       <div className="products-bg service-header contact-form-bg font-bold flex flex-col gap-5 justify-center items-center min-h-[600px] md:min-h-screen">
@@ -17,16 +29,20 @@ const ContactUs = () => {
         <h4 className="text-3xl text-center text-white">
           Your submission has been sent
         </h4>
-        <button className="text-white px-7 py-3 rounded-md bg-red-600 hover:bg-orange-600 transition duration-300 ease-in-out">
+        <button
+          onClick={handleButtonClick}
+          className="text-white px-7 py-3 rounded-md bg-red-600 hover:bg-orange-600 transition duration-300 ease-in-out"
+        >
           <Link href="/">Home</Link>
         </button>
       </div>
     );
   }
+
+
   return (
     <div name="contact" className="min-h-screen pt-[79px]">
-      <div className="max-w-[1100px] mx-auto mb-7">
-      </div>
+      <div className="max-w-[1100px] mx-auto mb-7"></div>
       {/* Contact Container */}
       <div className="mx-auto max-w-[1099px] my-10 px-4 md:px-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
         <div className="contact-form border shadow-lg shadow-[rgb(4,12,22)] container rounded-md p-7 order-last">
@@ -46,6 +62,17 @@ const ContactUs = () => {
               field="email"
               errors={state.errors}
             />
+
+            <div className="input-group mb-7">
+              <label htmlFor="number">Phone Number</label>
+              <input id="number" type="number" name="number" required />
+            </div>
+            <ValidationError
+              prefix="number"
+              field="number"
+              errors={state.errors}
+            />
+
             <div className="input-group mb-7">
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" required rows={5} />
