@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <div name="/" className="bg-[#f7f7f7] min-h-screen">
       <div className="bg-text ">
-        <div className="bg-text mt-4 md:mt-0">
+        <div className="mt-4 md:mt-0">
           <Swiper
             spaceBetween={50}
             centeredSlides={true}
