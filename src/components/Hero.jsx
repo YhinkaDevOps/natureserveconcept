@@ -37,7 +37,7 @@ const Hero = () => {
             <SwiperSlide className="min-h-[500]px]">
               <div className="flex md:flex-row flex-col md:pt-16 gap-10 md:px-10">
                 <div className="basis-1/2 flex flex-col space-y-6 md:space-y-5 text-black">
-                  <h4 className="animate__animated  animate__backInLeft text-xl md:text-4xl text-black text-start">
+                  <h4 className="animate__animated  animate__backInLeft text-2xl md:text-4xl text-black text-start">
                     Nature Concept & Allied Services Co. Landscape Design
                     Solution
                   </h4>
@@ -74,21 +74,21 @@ const Hero = () => {
                     className="rounded-lg "
                   />
                 </div>
-
+{/* 
                 <div className="md:hidden">
                   <img
                     src="/assets-two/about-2.jpg"
                     alt="hero-image"
                     className="card-images rounded-3xl p-2"
                   />
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
 
             <SwiperSlide className="min-h-[510px]">
               <div className="flex md:flex-row flex-col  md:pt-12 gap-10  md:px-10">
                 <div className="basis-1/2 flex flex-col space-y-6 md:space-y-5 text-black">
-                  <h4 className="text-xl md:text-4xl text-black text-start">
+                  <h4 className="text-2xl md:text-4xl text-black text-start">
                     Transforming Spaces: Premier Horticulture, Landscaping, and
                     Garden Solutions
                   </h4>
@@ -125,13 +125,13 @@ const Hero = () => {
                   />
                 </div>
 
-                <div className="md:hidden">
+                {/* <div className="md:hidden">
                   <img
                     src="assets-two/about-12.jpg"
                     alt="hero-image"
                     className="card-images rounded-3xl p-2"
                   />
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           </Swiper>
