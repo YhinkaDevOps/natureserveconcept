@@ -17,7 +17,7 @@ const Services = () => {
   return (
     <div
       name="about"
-      className=" min-h-[300px] mx-auto py-0 py-4 md:py-16 flex flex-col bg-[#f1f6f2]"
+      className=" min-h-[300px] mx-auto py-4 md:py-16 flex flex-col bg-[#f1f6f2]"
     >
       <div className="px-4 lg:px-0">
         <div className="text-center mb-12">
