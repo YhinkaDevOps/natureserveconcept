@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { IoCloseCircleSharp } from "react-icons/io5";
 import Image from "next/image";
 import image1 from "../../public/assets-two/about-9.jpg";
 import image2 from "../../public/assets/image-2.jpg";
@@ -11,6 +10,9 @@ import image6 from "../../public/assets/image-6.jpg";
 import image7 from "../../public/assets-two/about-26.jpg";
 import image8 from "../../public/assets-two/about-16.jpg";
 import image9 from "../../public/assets-two/about-19.jpg";
+import image10 from "../../public/assets-two/about-37.jpeg";
+import image11 from "../../public/assets-two/about-38.jpeg";
+import image12 from "../../public/assets-two/about-39.jpeg";
 
 const Gallery = () => {
   let dataCard = [
@@ -49,6 +51,18 @@ const Gallery = () => {
     {
       id: 9,
       imgSrc: image9,
+    },
+    {
+      id: 10,
+      imgSrc: image10,
+    },
+    {
+      id: 11,
+      imgSrc: image11,
+    },
+    {
+      id: 12,
+      imgSrc: image12,
     },
   ];
 

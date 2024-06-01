@@ -11,14 +11,14 @@ const Navbar = () => {
   const handleClick = () => setisClick(!isClick);
 
   return (
-    <nav className="font-sans navbar w-full fixed z-50 bg-white md:px-[20px] lg:px-[50px] xl:px-[120px]">
+    <nav className="font-sans navbar w-full fixed z-50 bg-white md:px-[20px] lg:px-[80px]">
       <div className="mx-auto py-4 px-5 md:px-2 md:pb-8 md:pt-2">
         <div className="flex justify-between items-end">
           <div className="pb-2 hidden md:block">
-            <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+            <button className="text-[#32bb43] gap-1 font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
               <Image
                 src="/assets/logo-bg.png"
-                width={20}
+                width={40}
                 height={65}
                 alt="logo"
               />
@@ -33,7 +33,7 @@ const Navbar = () => {
               <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
                 <Image
                   src="/assets/logo-bg.png"
-                  width={20}
+                  width={40}
                   height={65}
                   alt="logo"
                 />
