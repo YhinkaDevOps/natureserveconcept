@@ -30,13 +30,17 @@ const Navbar = () => {
 
           <div className="pb-2 block md:hidden">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              <button className="text-[#acbe40] font-bold hover:opacity-70 flex items-center flex-shrink-0 pt-5">
+              <button className="text-[#32bb43] text-sm font-bold hover:opacity-70 flex gap-1 items-center flex-shrink-0 pt-5">
                 <Image
                   src="/assets/logo-bg.png"
                   width={40}
                   height={65}
                   alt="logo"
                 />
+                <Link to="/" spy={true} smooth={true} duration={500}>
+                  Nature Concept & <br />
+                  Allied Services Co.
+                </Link>
               </button>
             </Link>
           </div>
