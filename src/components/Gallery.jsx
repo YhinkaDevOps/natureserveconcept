@@ -54,10 +54,10 @@ const Gallery = () => {
       id: 8,
       imgSrc: image8,
     },
-    {
-      id: 9,
-      imgSrc: image9,
-    },
+    // {
+    //   id: 9,
+    //   imgSrc: image9,
+    // },
     {
       id: 10,
       imgSrc: image10,
