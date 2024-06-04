@@ -91,7 +91,7 @@ const Navbar = () => {
                   Gallery
                 </Link>
               </li>
-              <li className="cursor-pointer text-white font-medium hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-8 py-3">
+              <li className="cursor-pointer text-white font-medium hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-12 py-2">
                 <Link
                   to="contact"
                   spy={true}
