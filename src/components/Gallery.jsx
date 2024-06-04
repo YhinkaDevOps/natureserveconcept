@@ -13,6 +13,12 @@ import image9 from "../../public/assets-two/about-19.jpg";
 import image10 from "../../public/assets-two/about-37.jpeg";
 import image11 from "../../public/assets-two/about-38.jpeg";
 import image12 from "../../public/assets-two/about-39.jpeg";
+import image13 from "../../public/assets-two/about-41.jpg";
+import image14 from "../../public/assets-two/about-42.jpg";
+import image15 from "../../public/assets-two/about-43.jpg";
+import image16 from "../../public/assets-two/about-44.jpg";
+import image17 from "../../public/assets-two/about-45.png";
+import image18 from "../../public/assets-two/about-46.png";
 
 const Gallery = () => {
   let dataCard = [
@@ -63,6 +69,30 @@ const Gallery = () => {
     {
       id: 12,
       imgSrc: image12,
+    },
+    {
+      id: 13,
+      imgSrc: image13,
+    },
+    {
+      id: 14,
+      imgSrc: image14,
+    },
+    {
+      id: 15,
+      imgSrc: image15,
+    },
+    {
+      id: 16,
+      imgSrc: image16,
+    },
+    {
+      id: 17,
+      imgSrc: image17,
+    },
+    {
+      id: 18,
+      imgSrc: image18
     },
   ];
 

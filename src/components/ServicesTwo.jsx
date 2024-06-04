@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import landscaping from "../../public/assets-two/about-15.jpg";
 import fumigation from "../../public/assets-two/about-12.jpg";
-import garden from "../../public/assets-two/about-19.jpg";
+import garden from "../../public/assets-two/about-40.png";
 import mowing from "../../public/assets-two/about-26.jpg";
 
 const ServicesTwo = () => {

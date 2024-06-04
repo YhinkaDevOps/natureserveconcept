@@ -28,13 +28,13 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="pb-2 block md:hidden">
+          <div className=" block md:hidden">
             <Link to="/" spy={true} smooth={true} duration={500}>
               <button className="text-[#32bb43] text-sm font-bold hover:opacity-70 flex gap-1 items-center flex-shrink-0 pt-5">
                 <Image
                   src="/assets/logo-bg.png"
-                  width={40}
-                  height={65}
+                  width={50}
+                  height={100}
                   alt="logo"
                 />
                 <Link to="/" spy={true} smooth={true} duration={500}>
