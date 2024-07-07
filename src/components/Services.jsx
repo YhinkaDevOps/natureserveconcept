@@ -57,9 +57,6 @@ const Services = () => {
               <SwiperSlide>
                 <img src="/assets-two/about-27.jpg" alt="about-jpg" />
               </SwiperSlide>
-              <SwiperSlide>
-                <img src="/assets-two/about-20.jpg" alt="about-jpg" />
-              </SwiperSlide>
             </Swiper>
           </div>
           <div className="flex flex-col gap-7 basis-[50%]">
